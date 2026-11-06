@@ -8,8 +8,8 @@ erDiagram
     ACCOUNT ||--o| STUDENT_PROFILE : has
     ACCOUNT ||--o| STAFF_PROFILE : has
     ACCOUNT ||--o{ MENTOR_ASSIGNMENT : participates_in
-    ACCOUNT ||--o{ CLASS : teaches
-    CLASS ||--o{ CLASS_ENROLLMENT : contains
+    ACCOUNT ||--o{ TEACHING_CLASS : teaches
+    TEACHING_CLASS ||--o{ CLASS_ENROLLMENT : contains
     ACCOUNT ||--o{ CLASS_ENROLLMENT : enrolls
     ACCOUNT ||--o{ APPLICATION : owns
     ACCOUNT ||--o{ TEST_SCORE : records_for_student
